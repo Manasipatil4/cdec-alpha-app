@@ -8,13 +8,13 @@
 
 pipeline {
     agent {
-        label 'ecs2'
+        label 'ecs'
     }
 
     parameters {
         string(
             name: 'S3_BUCKET',
-            defaultValue: 'cdec-alpha-cbzpb-dev-frontend', 
+            defaultValue: 'cdec-alpha-cbzpb-dev-frontend-manasi', 
             description: 'S3 bucket name for the frontend (e.g. cdec-frontend-dev-frontend)'
         )
         string(
